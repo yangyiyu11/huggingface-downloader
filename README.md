@@ -6,11 +6,12 @@
 
 ✅ 基本模型/数据集/space下载功能  
 ✅ 断点续传  
-🔜 多线程下载  
+✅ 多线程下载  
 ✅ 下载进度显示  
-🔜 模型验证  
+✅ 模型验证  
 ✅ 项目信息查询  
 ✅ 子目录下载  
+✅ URL直接下载  
 ✅ 下载统计信息  
 
 ## 安装
@@ -37,14 +38,26 @@ hf-downloader
 
 ## 示例
 
-下载整个模型：
+1. 下载整个模型：
 ```
 请输入 Hugging Face 项目名称（如 username/model，直接回车退出）：bert-base-uncased
 ```
 
-下载特定子目录：
+2. 下载特定子目录：
 ```
 请输入 Hugging Face 项目名称（如 username/model，直接回车退出）：bert-base-uncased
+请输入要下载的子目录或文件（直接回车下载全部内容）: config.json
+```
+
+3. 通过URL直接下载：
+```
+请输入 Hugging Face 项目名称或URL（直接回车退出）：https://huggingface.co/bert-base-uncased/blob/main/config.json
+```
+
+4. 下载特定分支的子目录：
+```
+请输入 Hugging Face 项目名称（如 username/model，直接回车退出）：bert-base-uncased
+请输入分支、tag 或 commit（直接回车默认 main）: v1.0.0
 请输入要下载的子目录或文件（直接回车下载全部内容）: config.json
 ```
 
