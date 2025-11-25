@@ -54,6 +54,21 @@ hf-downloader
 请输入 Hugging Face 项目名称或URL（直接回车退出）：https://huggingface.co/bert-base-uncased/blob/main/config.json
 ```
 
+✅ 支持功能：
+- 支持直接输入Hugging Face仓库的URL进行下载
+- 支持下载特定文件或子目录
+- 自动识别仓库类型（模型/数据集/space）
+
+📌 支持的URL格式：
+1. 仓库主页URL：`https://huggingface.co/username/model`
+2. 文件URL：`https://huggingface.co/username/model/blob/main/file.txt`
+3. 子目录URL：`https://huggingface.co/username/model/tree/main/subfolder`
+
+⚠️ 注意事项：
+- URL必须包含完整的Hugging Face域名
+- 下载大文件时建议使用稳定的网络连接
+- 如需下载私有仓库，请先登录Hugging Face账号并获取访问令牌
+
 4. 下载特定分支的子目录：
 ```
 请输入 Hugging Face 项目名称（如 username/model，直接回车退出）：bert-base-uncased
